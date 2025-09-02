@@ -1,0 +1,16 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class CurrentDatePrinter {
+    public static void main(String[] args) {
+        // Get current date
+        LocalDate currentDate = LocalDate.now();
+
+        // Format the date as YYYY-MM-DD
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        String formattedDate = currentDate.format(formatter);
+
+        // Print the current date
+        System.out.println("Current Date: " + formattedDate);
+    }
+}
